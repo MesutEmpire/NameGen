@@ -23,4 +23,23 @@ function generateName() {
   var d = parseInt(
     (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7
   );
+
+  if (gender == "Male") {
+    document.getElementById("display-name").innerHTML =
+      "<p>Your AKan Name is <strong> " +
+      male[DY] +
+      "</strong> and you were born on  " +
+      day[DY] +
+      "</p>";
+  } else if (gender == "Female") {
+    document.getElementById("display-name").innerHTML =
+      "<p>Your AKan Name is <strong> " +
+      female[DY] +
+      "</strong> and you were born on " +
+      day[DY] +
+      "</p>";
+  } else {
+    document.getElementById("display-name").innerHTML =
+      "Error.Please select your gender.";
+  }
 }
