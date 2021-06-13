@@ -2,12 +2,6 @@
   margin-bottom: 20px;
 }
 .bg {
-  background-image: url("images/bg.jpg");
-  background-repeat: no-repeat;
+  background-image: url("https://i.pinimg.com/564x/e9/de/a9/e9dea90954f67b8ccc3b8ad7fee9125d.jpg");
   background-size: cover;
-  background-blend-mode: overlay;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
 }

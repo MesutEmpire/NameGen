@@ -2,93 +2,116 @@
 <html lang="en">
   <head>
     <title>NameGen</title>
-    <link
-      rel="icon"
-      href="images/icon.jpg"
-      type="image/jpg"
-    />
+    <link rel="icon" href="images/icon.jpg" type="image/jpg" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="main.css" />
     <script src="script.js"></script>
   </head>
   <body>
-      <div class="bg">
-    <div class="container p-2">
-      <div class="row vh-100">
-        <div class="form-group col-md-12">
-          <form>
-            <div class="mb-5 p-5 card border border-dark" >
-              <h2>PERSONAL INFORMATION</h2>
-              <hr />
-
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="FirstName" class="form-label">First Name</label>
-                  <input
-                    id="FirstName"
-                    name="FirstName"
-                    type="text"
-                    required
-                    class="form-control sam"
+    <div class="bg">
+      <div class="container p-2">
+        <div class="row vh-100">
+          <div class="form-group col-md-12">
+            <form>
+              <div class="mb-5 p-1 card border border-dark">
+                <div class="card bg-dark text-white">
+                  <img
+                    src="https://i.pinimg.com/564x/04/e2/dc/04e2dcaa9cab4f9636a5e43d9d819003.jpg"
+                    class="card-img"
+                    alt="..."
                   />
-                </div>
+                  <div class="card-img-overlay">
+                    <h1 class="text-center">NameGEN</h1>
+                    <h2>PERSONAL INFORMATION</h2>
+                    <hr />
 
-                <div class="form-group col-md-6">
-                  <label for="LastName" class="form-label">Last Name</label>
-                  <input
-                    id="LastName"
-                    name="LastName"
-                    type="text"
-                    required
-                    class="form-control sam"
-                  />
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label for="FirstName" class="form-label"
+                          >First Name</label
+                        >
+                        <input
+                          id="FirstName"
+                          name="FirstName"
+                          type="text"
+                          required
+                          class="form-control sam"
+                          placeholder="John"
+                        />
+                      </div>
+
+                      <div class="form-group col-md-6">
+                        <label for="LastName" class="form-label"
+                          >Last Name</label
+                        >
+                        <input
+                          id="LastName"
+                          name="LastName"
+                          type="text"
+                          required
+                          class="form-control sam"
+                          placeholder="Doe"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="MiddleName" class="form-label"
+                        >Middle Name</label
+                      >
+
+                      <input
+                        id="MiddleName"
+                        name="MiddleName"
+                        type="text"
+                        class="form-control sam"
+                        placeholder="Mike"
+                      />
+                    </div>
+
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label for="DateOfBirth" class="form-label"
+                          >Date Of Birth</label
+                        >
+
+                        <input
+                          id="DateOfBirth"
+                          name="DateOfBirth"
+                          type="date"
+                          class="form-control sam"
+                          required
+                        />
+                      </div>
+
+                      <div class="form-group col-md-6">
+                        <label for="Gender" class="form-label">Gender</label>
+                        <select
+                          name="dropdown"
+                          class="form-control sam"
+                          id="Gender"
+                          required
+                        >
+                          <option selected disabled value="">
+                            Choose Gender...
+                          </option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="generateName()">
+                      Generate Akan Name
+                    </button>
+                    <div id="display-name" class="p-4"></div>
+                  </div>
                 </div>
               </div>
-
-              <div class="form-group">
-                <label for="MiddleName" class="form-label">Middle Name</label>
-
-                <input
-                  id="MiddleName"
-                  name="MiddleName"
-                  type="text"
-                  class="form-control sam"
-                />
-              </div>
-
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="DateOfBirth" class="form-label"
-                    >Date Of Birth</label
-                  >
-
-                  <input
-                    id="DateOfBirth"
-                    name="DateOfBirth"
-                    type="date"
-                    class="form-control sam"
-                  />
-                </div>
-
-                <div class="form-group col-md-6">
-                  <label for="Gender" class="form-label">Gender</label>
-                  <select name="dropdown" class="form-control sam" id="Gender">
-                    <option selected disabled value="">Choose Gender...</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                  </select>
-                </div>
-              </div>
-
-              <button class="btn btn-primary" onclick="generateName()">
-                Generate Akan Name
-              </button>
-              <div id="display-name" class="p-4"></div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </body>
 </html>
