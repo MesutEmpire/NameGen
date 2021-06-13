@@ -3,6 +3,7 @@
   <head>
     <title>NameGen</title>
     <link rel="icon" href="images/icon.jpg" type="image/jpg" />
+
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="main.css" />
     <script src="script.js"></script>
@@ -15,16 +16,13 @@
             <form>
               <div class="mb-5 p-1 card border border-dark">
                 <div class="card bg-dark text-white">
-                  <img
-                    src="https://i.pinimg.com/564x/04/e2/dc/04e2dcaa9cab4f9636a5e43d9d819003.jpg"
-                    class="card-img"
-                    alt="..."
-                  />
+                  <img src="images/card.jpg" class="card-img" alt="..." />
                   <div class="card-img-overlay">
                     <h1 class="text-center">NameGEN</h1>
+
                     <h2>PERSONAL INFORMATION</h2>
                     <hr />
-
+                    <p>Fill the below form to get your Akan Name:</p>
                     <div class="row">
                       <div class="form-group col-md-6">
                         <label for="FirstName" class="form-label"
@@ -101,7 +99,10 @@
                       </div>
                     </div>
 
-                    <button class="btn btn-primary" onclick="generateName()">
+                    <button
+                      class="btn btn-primary large"
+                      onclick="generateName()"
+                    >
                       Generate Akan Name
                     </button>
                     <div id="display-name" class="p-4"></div>
