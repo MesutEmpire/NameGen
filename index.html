@@ -4,9 +4,10 @@
     <title>NameGen</title>
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="main.css" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <div class="container p-2">
+    <div class="container p-2 ">
       <div class="row">
         <div class="form-group col-md-12">
           <form>
@@ -65,14 +66,17 @@
 
                 <div class="form-group col-md-6">
                   <label for="Gender" class="form-label">Gender</label>
-                  <select name="dropdown" class="form-control sam">
+                  <select name="dropdown" class="form-control sam" id="Gender">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                   </select>
                 </div>
               </div>
 
-              <button class="btn btn-primary">Generate Name</button>
+              <button class="btn btn-primary" onclick="generateName()">
+                Generate Akan Name
+              </button>
+                 <div id="display-name" class="p-4"> </div>
             </div>
           </form>
         </div>
