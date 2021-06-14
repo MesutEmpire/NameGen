@@ -10,6 +10,13 @@ function generateName() {
     "Friday",
     "Saturday",
   ];
+  var firstName = document.getElementById("FirstName").value;
+  console.log(firstName);
+  var middleName = document.getElementById("MiddleName").value;
+  console.log(middleName);
+  var lastName = document.getElementById("LastName").value;
+  console.log(lastName);
+
   var dob = new Date(document.getElementById("DateOfBirth").value);
   var gender = document.getElementById("Gender").value;
   var year = dob.getFullYear().toString();
