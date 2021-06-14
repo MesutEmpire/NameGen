@@ -18,8 +18,7 @@
                 <div class="card bg-dark text-white">
                   <img src="images/card.jpg" class="card-img" alt="..." />
                   <div class="card-img-overlay">
-                    <h1 class="text-center">NameGEN</h1>
-
+                    <h1 class="text-center">NameGen</h1>
                     <h2>PERSONAL INFORMATION</h2>
                     <hr />
                     <p>Fill the below form to get your Akan Name:</p>
@@ -98,17 +97,36 @@
                         </select>
                       </div>
                     </div>
-
-                    <button type="button"
-                      class="btn btn-primary large m-2 p-2"
-                      onclick="generateName()"
-                    >
-                      Generate Akan Name
-                    </button>
-                  </br>
-                    <button type="submit" class= "btn btn-primary large m-2 p-2"> Clear</button>
-
-                    <div id="display-name" class=" m-4 p-4" style="text-align:center;font-size: 25px;font-style: inherit;"></div>
+                    <div class="row">
+                      <div class="col-md-6 mx-auto">
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-block"
+                          onclick="generateName()"
+                        >
+                          Generate Akan Name
+                        </button>
+                      </div>
+                      <div class="col-md-6 btn-block">
+                        <button
+                          type="submit"
+                          class="btn btn-primary large m-2 p-2 btn-block"
+                        >
+                          Clear
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div
+                      id="display-name"
+                      class="m-4 p-4"
+                      style="
+                        text-align: center;
+                        font-size: 25px;
+                        font-style: inherit;
+                      "
+                    ></div>
                   </div>
                 </div>
               </div>
