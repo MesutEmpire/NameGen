@@ -25,7 +25,7 @@ function generateName() {
   var YY = year.slice(2, 4);
   var MM = dob.getMonth() + 1;
   var DD = dob.getDate();
-  var DY = dob.getDay();
+  // var DY = dob.getDay();
 
   console.log(CC + "/" + YY + "/" + MM + "/" + DD);
 
@@ -40,16 +40,16 @@ function generateName() {
   if (gender == "Male") {
     document.getElementById("display-name").innerHTML =
       "<p>Your AKan Name is <strong> " +
-      male[DY] +
+      male[d] +
       "</strong> and you were born on  <strong>" +
-      day[DY] +
+      day[d] +
       "</strong ></p>";
   } else if (gender == "Female") {
     document.getElementById("display-name").innerHTML =
       "<p>Your AKan Name is <strong> " +
-      female[DY] +
+      female[d] +
       "</strong> and you were born on <strong>" +
-      day[DY] +
+      day[d] +
       "</strong> </p>";
   } else {
     alert("Error.Please select your gender.");
