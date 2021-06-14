@@ -41,18 +41,17 @@ function generateName() {
     document.getElementById("display-name").innerHTML =
       "<p>Your AKan Name is <strong> " +
       male[DY] +
-      "</strong> and you were born on  " +
+      "</strong> and you were born on  <strong>" +
       day[DY] +
-      "</p>";
+      "</strong ></p>";
   } else if (gender == "Female") {
     document.getElementById("display-name").innerHTML =
       "<p>Your AKan Name is <strong> " +
       female[DY] +
-      "</strong> and you were born on " +
+      "</strong> and you were born on <strong>" +
       day[DY] +
-      "</p>";
+      "</strong> </p>";
   } else {
-    document.getElementById("display-name").innerHTML =
-      "Error.Please select your gender.";
+    alert("Error.Please select your gender.");
   }
 }
