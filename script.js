@@ -16,6 +16,7 @@ function generateName() {
   console.log(middleName);
   var lastName = document.getElementById("LastName").value;
   console.log(lastName);
+  var dateInput = document.getElementById("DateOfBirth").value;
 
   var dob = new Date(document.getElementById("DateOfBirth").value);
   var gender = document.getElementById("Gender").value;
@@ -37,6 +38,22 @@ function generateName() {
   console.log("Date of the week-> (dob->getDate()) ", dob.getDate());
   console.log("Value of d -> ", d);
 
+  if (firstName == null || firstName == "") {
+    alert("Please Fill In Your First Name");
+    return false;
+  }
+  if (middleName == null || middleName == "") {
+    alert("Please Fill In Your Middle Name");
+    return false;
+  }
+  if (lastName == null || lastName == "") {
+    alert("Please Fill In Last Name");
+    return false;
+  }
+  if (dateInput == null || dateInput == "") {
+    alert("Please Fill In Your Date Of Birth");
+    return false;
+  }
   if (gender == "Male") {
     document.getElementById("display-name").innerHTML =
       "<p>Your AKan Name is <strong> " +
@@ -52,6 +69,6 @@ function generateName() {
       day[d] +
       "</strong> </p>";
   } else {
-    alert("Error.Please select your gender.");
+    alert("Please select your gender.");
   }
 }
