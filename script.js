@@ -72,3 +72,6 @@ function generateName() {
     alert("Please select your gender.");
   }
 }
+function clearPage() {
+  document.getElementById("display-name").innerHTML = " ";
+}
